@@ -452,12 +452,18 @@ html, body {
 }
 
 /* line 29, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
-a, a:hover {
+a {
   color: white;
   text-decoration: none;
 }
 
 /* line 34, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+a:hover {
+  color: #C1907D;
+  text-decoration: none;
+}
+
+/* line 39, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -465,31 +471,41 @@ a, a:hover {
   height: 80px;
 }
 
-/* line 40, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+/* line 45, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
 .navbar div {
   line-height: 80px;
   text-align: center;
   color: white;
 }
 
-/* line 46, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+/* line 51, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
 .navbar div:nth-child(1) {
   width: 25%;
   padding-left: 10px;
 }
 
-/* line 51, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+/* line 55, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+.navbar div:nth-child(1) a {
+  padding: 2em 0;
+}
+
+/* line 60, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
 .navbar div:nth-child(2) {
   width: 40%;
   font-size: 10px;
 }
 
-/* line 56, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+/* line 65, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
 .navbar div:nth-child(3) {
   width: 25%;
 }
 
-/* line 59, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+/* line 68, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+.navbar div:nth-child(3) a {
+  padding: 2em 1em;
+}
+
+/* line 72, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
 .navbar div:nth-child(3) ul {
   display: flex;
   justify-content: space-around;
@@ -499,22 +515,26 @@ a, a:hover {
   margin: 0;
 }
 
-/* line 70, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+/* line 87, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
 .tabs {
   display: flex;
   justify-content: center;
 }
 
-/* line 74, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+/* line 91, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
 .tabs a {
-  color: white;
   font-size: 20px;
   display: inline-block;
   width: 100%;
   padding: 1em 0;
 }
 
-/* line 82, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+/* line 98, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+.tabs a:hover {
+  color: #232323;
+}
+
+/* line 102, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
 .tabs ul {
   width: 100%;
   display: flex;
@@ -525,14 +545,19 @@ a, a:hover {
   margin: 0;
 }
 
-/* line 91, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+/* line 111, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
 .tabs ul li {
   text-align: center;
   background-color: #232323;
   margin: 1px 10%;
 }
 
-/* line 99, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+/* line 117, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
+.tabs ul li:hover {
+  background-color: #D3CED5;
+}
+
+/* line 123, ../César/Documents/MIW/Integration_2/github/tp_css_2/scss/style.scss */
 .weather {
   display: none;
 }
