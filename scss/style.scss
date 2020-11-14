@@ -1,4 +1,5 @@
 @import 'reset';
+@import 'fonts';
 
 $navHeight: 80px;
 
@@ -23,6 +24,11 @@ html, body {
    flex-direction: column;
    justify-content: space-between;
 
+}
+
+a, a:hover {
+   color: white;
+   text-decoration: none;
 }
 
 .navbar {
@@ -52,8 +58,11 @@ html, body {
 
       ul {
          display: flex;
+         justify-content: space-around;
          text-decoration: none;
          list-style: none;
+         padding: 0;
+         margin: 0;
       }
    }
 }
@@ -85,6 +94,10 @@ html, body {
          margin: 1px 10%;
       }
    }
+}
+
+.weather {
+   display: none;
 }
 
 // Medium devices (tablets, 768px and up)
