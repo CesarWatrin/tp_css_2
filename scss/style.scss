@@ -1,7 +1,7 @@
 @import 'reset';
 @import 'fonts';
 
-$navHeight: 80px;
+$navHeight: 100px;
 
 body {
    background: url('../img/lauzanne_bg.jpg') no-repeat center center fixed;
@@ -42,31 +42,40 @@ a:hover {
    background-color: #44474F;
    height: $navHeight;
 
-   div {
+   .onglet {
       line-height: $navHeight;
       text-align: center;
       color: white;
    }
 
-   div:nth-child(1) {
+   .onglet:nth-child(1) {
       width: 25%;
       padding-left: 10px;
 
       a {
          padding: 2em 0;
       }
+
+      div {
+         text-align: left;
+
+         img {
+            max-width: 180px;
+         }
+      }
    }
 
-   div:nth-child(2) {
+   .onglet:nth-child(2) {
       width: 40%;
-      font-size: 10px;
+      font-size: 12px;
    }
 
-   div:nth-child(3) {
+   .onglet:nth-child(3) {
       width: 25%;
 
       a {
-         padding: 2em 0.5em;
+         display: inline-block;
+         width: 100%;
       }
 
       ul {
@@ -78,7 +87,7 @@ a:hover {
          margin: 0;
 
          li {
-            // padding: 0 1em;
+            width: 100%;
          }
       }
    }
@@ -110,14 +119,18 @@ a:hover {
 
       li {
          text-align: center;
-         background-color: #232323;
+         background-color: rgba(35, 35, 35, 0.6);
          margin: 1px 10%;
       }
 
       li:hover {
-         background-color: #D3CED5;
+         background-color: rgba(211, 206, 213, 0.7);
       }
    }
+}
+
+.contact {
+   display: none;
 }
 
 .weather {
@@ -127,9 +140,29 @@ a:hover {
 // Medium devices (tablets, 768px and up)
 @media screen and (min-width: 768px) {
 
+   .tabs {
+
+      ul {
+         width: 100%;
+         flex-direction: row;
+         justify-content: center;
+
+         li {
+            margin: 1px;
+            width: 30%;
+         }
+      }
+   }
 }
 
 // Large devices (desktops, 992px and up)
 @media screen and (min-width: 992px) {
 
+   .weather {
+      display: block;
+   }
+
+   .contact {
+      display: block;
+   }
 }
